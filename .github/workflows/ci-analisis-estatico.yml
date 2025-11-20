@@ -21,5 +21,4 @@ jobs:
           java-version: "11"
 
       - name: Compilar y ejecutar análisis estático
-        working-directory: ./demo
-        run: mvn -B clean verify
+        run: cd demo && mvn -B clean verify
